@@ -1,1 +1,1 @@
-# AIPI561-proj2
+# AIPI561 Project 2 by Leo Corelli
