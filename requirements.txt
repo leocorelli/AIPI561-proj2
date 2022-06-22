@@ -1,0 +1,6 @@
+scikit-learn == 0.24.1
+databricks
+databricks.automl_runtime
+pandas
+holidays
+cloudpickle
