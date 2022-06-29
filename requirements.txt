@@ -4,3 +4,4 @@ databricks.automl_runtime
 pandas
 holidays
 cloudpickle
+streamlit
