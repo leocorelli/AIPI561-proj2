@@ -2,7 +2,8 @@ import streamlit as st
 from functions import load_pipeline, gen_input_df, load_dropdown_menu_options, gen_salary_pred # local, user-written functions
 
 st.title("Data Science/Machine Learning Industry Salary Prediction")
-st.image("images/money_and_computer_image.png")
+st.image("images/money_and_computer_image.png") # this image was sourced on wikimedia commons, at: https://commons.wikimedia.org/wiki/File:Cartoon_Woman_Surprised_By_Money_Coming_Out_From_Her_Computer.svg
+# all credit for this image goes to the original creator!
 
 experience_level, employment_type, job_title, employee_residence, company_location, company_size = load_dropdown_menu_options()
 
