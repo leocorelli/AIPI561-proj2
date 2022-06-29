@@ -18,12 +18,15 @@ def load_dropdown_menu_options():
 
     return experience_level, employment_type, job_title, employee_residence, company_location, company_size
 
-
-
-def gen_input_df():
-    data = {"work_year":2020, "experience_level":"MI","employment_type":"FT", "job_title":"Data Scientist", "employee_residence":"DE","remote_ratio":0, "company_location":"DE", "company_size":"L"}
-    test_input = pd.DataFrame(data,index=[0])
-    return test_input
+def gen_input_df(work_year, experience_level, employment_type, job_title, employee_residence, remote_ratio, company_location, company_size):
+    data = {"work_year":2020, "experience_level":experience_level,"employment_type":employment_type, "job_title":job_title, "employee_residence":employee_residence,"remote_ratio":remote_ratio, "company_location":company_location, "company_size":company_size}
+    input_df = pd.DataFrame(data,index=[0])
+    return input_df
+    
+def gen_salary_pred(input_df,pipeline):
+    pred = pipeline.predict(input_df)
+    salary_prediction = np.round(pred[0],2)
+    return salary_prediction
     
 
 # if __name__ == "__main__":
